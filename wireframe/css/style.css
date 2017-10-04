@@ -600,8 +600,23 @@ h6 {
         background-color: #E4E6E9; }
 
 .form {
-  height: 200px;
-  width: 80%; }
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-content: space-between;
+  justify-content: center;
+  height: 300px;
+  width: 100%; }
+  .form__row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap; }
+  .form__input {
+    width: 45%;
+    height: 50px; }
+    .form__input--textarea {
+      height: 200px; }
 
 .header {
   display: flex;
