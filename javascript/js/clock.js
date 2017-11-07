@@ -1,8 +1,9 @@
-var i = 0;
+var random = 0;
 
 function IntervalSet() {
 	setInterval(CreateHands, 1);
 }
+
 setInterval(CheckQuote, 1000);
 
 function CreateHands() {
@@ -42,15 +43,16 @@ function CheckQuote() {
 	var second = now.getSeconds();
 	var minute = now.getMinutes();
 
-	if(minute === 0 && second === 0 || minute === 30 && second === 0) {
-		let x = document.getElementsByClassName('quote').length;
-		let d = i;
+	if (minute === 0 && second === 0 || minute === 30 && second === 0 ) {
+	// if (second === 0 || second === 30 ) {	// Test wether it works
+		let length = document.getElementsByClassName('quote').length;
+		let history = random;
 
-		document.getElementsByClassName('quote')[d].style.display = 'none';
-		i = Math.floor(Math.random() * x);
+		document.getElementsByClassName('quote')[history].style.display = 'none';
+		random = Math.floor(Math.random() * length);
 
-		if(d !== i) {
-			document.getElementsByClassName('quote')[i].style.display = 'block';
+		if(history !== random) {
+			document.getElementsByClassName('quote')[random].style.display = 'block';
 		} else {
 			CheckQuote();
 		}
@@ -58,7 +60,7 @@ function CheckQuote() {
 }
 
 function ShowQuote() {
-	let x = document.getElementsByClassName('quote').length;
-	i = Math.floor(Math.random() * x);
-	document.getElementsByClassName('quote')[i].style.display = 'block';
+	let length = document.getElementsByClassName('quote').length;
+	random = Math.floor(Math.random() * length);
+	document.getElementsByClassName('quote')[random].style.display = 'block';
 }

@@ -3,37 +3,51 @@
 	<head>
 		<title>Javascript Clock</title>
 		<link rel="stylesheet" href="index.css">
-		<script type='text/javascript' src='js/clock.js'></script>
-	</head>
+		<script type="text/javascript" src="js/clock.js"></script>
+		<script type="text/javascript" src="js/loadmore.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/fastexc.js"></script>
+	</head>	
 	<body onload="ShowQuote()">
-		<div id="clock" class="clock">
-			<div class="turnpoint">
-				<img id="hour" src="Image/hand.png" alt="LOOK AT ME" height="200px">
-				<img id="minute" src="Image/hand.png" alt="LOOK AT ME" height="300px">
-				<img id="second" src="Image/hand.png" alt="LOOK AT ME" height="390px">
-				<img id="millisecond" src="Image/hand.png" alt="LOOK AT ME" height="390px" onload="IntervalSet()">
+		<div class="container" id="container">
+			<div id="clock" class="clock">
+				<div class="turnpoint">
+					<img id="hour" src="Image/hand.png" alt="LOOK AT ME" height="200px" width="70px">
+					<img id="minute" src="Image/hand.png" alt="LOOK AT ME" height="300px">
+					<img id="second" src="Image/hand.png" alt="LOOK AT ME" height="390px">
+					<img id="millisecond" src="Image/handred.png" alt="LOOK AT ME" height="390px" width="20px" onload="IntervalSet()">
+				</div>
 			</div>
-		</div>
-		
-		<div class="quotes">
-			<p class="quote"><i>Only I can change my life. No one can do it for me.</i><br/> -Carol Burnett</p>
-			<p class="quote"><i>Love is taking that dive then getting really comfortable and peeing in the pool</i><br/> -Bo Burnham</p>
-			<p class="quote"><i>Life is like riding a bicycle. To keep your balance, you must keep moving.</i><br/> -Albert Einstein</p>
-			<p class="quote"><i>The true sign of intelligence is not knowledge but imagination.</i><br/> -Albert Einstein</p>
-			<p class="quote"><i>It's not that I'm so smart, it's just that I stay with problems longer.</i><br/> -Albert Einstein</p>
-			<p class="quote"><i>I have no special talent. I am only passionately curious.</i><br/> -Albert Einstein</p>
-			<p class="quote"><i>The difference between stupidity and genius is that genius has its limits.</i><br/> -Albert Einstein</p>
-			<p class="quote"><i>In the twenty-first century, the robot will take the place which slave labor occupied in ancient civilization.</i><br/> -Nikola Tesla</p>
-			<p class="quote"><i>Modern science says: 'The sun is the past, the earth is the present, the moon is the future.' From an incandescent mass we have originated, and into a frozen mass we shall turn. Merciless is the law of nature, and rapidly and irresistibly we are drawn to our doom.</i><br/> -Nikola Tesla</p>
-			<p class="quote"><i>The spread of civilisation may be likened to a fire; first, a feeble spark, next a flickering flame, then a mighty blaze, ever increasing in speed and power.</i><br/> -Nikola Tesla</p>
-			<p class="quote"><i>Education is the passport to the future, for tomorrow belongs to those who prepare for it today. </i><br/> -Malcolm X</p>
-			<p class="quote"><i>Liever lui dan moe.</i><br/> -Fabian Nievaart</p>
-			<p class="quote"><i>Die achtergrond blijf nu blauw.</i><br/> -Mandy van Zetten</p>
-			<p class="quote"><i>Tim! Hij hoort me niet.</i><br/> -Twan Nieborg</p>
-			<p class="quote"><i>Wat? ik hoor je wel.</i><br/> -Tim Dorsman</p>
-			<p class="quote"><i>'S avonds een vent, 'S ochtends aanwezig.</i><br/> -Luuk van Gille</p>
-			<p class="quote"><i>Mij maakt het echt niet uit.</i><br/> -Kishan Sewdas</p>
-			<p class="quote"><i>Nie lulle maar poetsen.</i><br/> -Een Rotterdammer</p>
+			<div class="quotes">
+				<p class="quote"><i>Only I can change my life. No one can do it for me.</i><br/> -Carol Burnett</p>
+				<p class="quote"><i>Love is taking that dive then getting really comfortable and peeing in the pool</i><br/> -Bo Burnham</p>
+				<p class="quote"><i>Life is like riding a bicycle. To keep your balance, you must keep moving.</i><br/> -Albert Einstein</p>
+				<p class="quote"><i>The true sign of intelligence is not knowledge but imagination.</i><br/> -Albert Einstein</p>
+				<p class="quote"><i>It's not that I'm so smart, it's just that I stay with problems longer.</i><br/> -Albert Einstein</p>
+				<p class="quote"><i>I have no special talent. I am only passionately curious.</i><br/> -Albert Einstein</p>
+				<p class="quote"><i>The difference between stupidity and genius is that genius has its limits.</i><br/> -Albert Einstein</p>
+				<p class="quote"><i>In the twenty-first century, the robot will take the place which slave labor occupied in ancient civilization.</i><br/> -Nikola Tesla</p>
+				<p class="quote"><i>Modern science says: 'The sun is the past, the earth is the present, the moon is the future.' From an incandescent mass we have originated, and into a frozen mass we shall turn. Merciless is the law of nature, and rapidly and irresistibly we are drawn to our doom.</i><br/> -Nikola Tesla</p>
+				<p class="quote"><i>The spread of civilisation may be likened to a fire; first, a feeble spark, next a flickering flame, then a mighty blaze, ever increasing in speed and power.</i><br/> -Nikola Tesla</p>
+				<p class="quote"><i>Education is the passport to the future, for tomorrow belongs to those who prepare for it today. </i><br/> -Malcolm X</p>
+				<p class="quote"><i>Liever lui dan moe.</i><br/> -Fabian Nievaart</p>
+				<p class="quote"><i>Die achtergrond blijf nu blauw.</i><br/> -Mandy van Zetten</p>
+				<p class="quote"><i>Tim! Hij hoort me niet.</i><br/> -Twan Nieborg</p>
+				<p class="quote"><i>Wat? ik hoor je wel.</i><br/> -Tim Dorsman</p>
+				<p class="quote"><i>'S avonds een vent, 'S ochtends aanwezig.</i><br/> -Luuk van Gille</p>
+				<p class="quote"><i>Mij maakt het echt niet uit.</i><br/> -Kishan Sewdas</p>
+				<p class="quote"><i>Nie lulle maar poetsen.</i><br/> -Een Rotterdammer</p>
+			</div>
+			<div class="hide" id="hide">
+				<p class="timer">THIS IS WHERE TIME GOES</p>
+				<p class="timer">THIS IS WHERE SOUND GOES</p>
+				<button class="button" onclick="askTime()">
+					Set timer
+				</button>
+			</div>
+			<button class="button" id="button" onclick="load()">
+				Load More
+			</button>
 		</div>
 	</body>
 </html>
