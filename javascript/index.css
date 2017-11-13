@@ -57,8 +57,38 @@
 	font-size: 24px;
 }
 
+.largest {
+	margin-bottom: 100px;
+}
+
 .button {
 	padding: 10px 20px;
 	background-color: transparent;
 	border: solid 2px black;
+}
+
+.timeline {
+	position: relative;
+	height: 1000px;
+	width: 10px;
+	background-color: black;
+	border-radius: 4em;
+}
+
+.image--left {
+	position: relative;
+	right: 600px;
+	opacity: 0;
+	transition: 1s ease;
+	width: 400px;
+	height: 300px;
+}
+
+.image--right {
+	position: relative;
+	left: 600px;
+	opacity: 0;
+	transition: 1s ease;
+	width: 400px;
+	height: 300px;
 }

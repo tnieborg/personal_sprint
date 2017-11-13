@@ -7,8 +7,9 @@
 		<script type="text/javascript" src="js/loadmore.js"></script>
 		<script type="text/javascript" src="js/timer.js"></script>
 		<script type="text/javascript" src="js/fastexc.js"></script>
+		<script type="text/javascript" src="js/slideIn.js"></script>
 	</head>	
-	<body onload="ShowQuote()">
+	<body onscroll="move()" onload="ShowQuote()">
 		<div class="container" id="container">
 			<div id="clock" class="clock">
 				<div class="turnpoint">
@@ -48,6 +49,24 @@
 			<button class="button" id="button" onclick="load()">
 				Load More
 			</button>
+
+			<div class="largest">
+				<input type="text" name="numb1" id="numb1">
+				<input type="text" name="numb2" id="numb2">
+				<input type="text" name="numb3" id="numb3">
+				<input type="text" name="numb4" id="numb4">
+				<input type="text" name="numb5" id="numb5">
+				<button class="button" onclick="largest()">
+					CALCULATE LARGEST
+				</button>
+			</div>
+			<div>
+				<div class="timeline">
+					<img class="image--left" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here">
+					<img class="image--right" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here">
+					<img class="image--left" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
