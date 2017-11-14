@@ -1,0 +1,22 @@
+{
+	"Hobbies": [
+		{
+			"name": "Developing",
+			"since": 2014,
+			"When": "Almost every day",
+			"Why": "I was still in Havo, where a teacher said that might be a good thing for me to do. After I tried some developing for games, I went to GLR and there I really enjoyed webdeveloping"
+		},
+		{
+			"name": "Agility",
+			"since": 2012,
+			"When": "Every thursday",
+			"Why": "After I was done with Obedience for my dog, I decided to do agility and never stopped"
+		},
+		{
+			"name": "Gaming",
+			"since": 2012,
+			"When": "almost every day",
+			"Why": "I started playing Minecraft and from there my love for games really grew, although I played some games before that age too, like Sims"
+		}
+	]
+}

@@ -2,8 +2,8 @@
 
 function move() {
 	var timeline = document.getElementsByClassName("image--left")[0].offsetHeight;
-	console.log(timeline);
-	console.log(scrollY);
+	// console.log(timeline);
+	// console.log(scrollY);
 
 	if (scrollY > timeline) {
 		document.getElementsByClassName("image--left")[0].style.right = "430px";

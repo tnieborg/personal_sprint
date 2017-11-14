@@ -8,6 +8,7 @@
 		<script type="text/javascript" src="js/timer.js"></script>
 		<script type="text/javascript" src="js/fastexc.js"></script>
 		<script type="text/javascript" src="js/slideIn.js"></script>
+		<script type="text/javascript" src="js/jsonget.js"></script>
 	</head>	
 	<body onscroll="move()" onload="ShowQuote()">
 		<div class="container" id="container">
@@ -62,9 +63,14 @@
 			</div>
 			<div>
 				<div class="timeline">
-					<img class="image--left" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here">
+					<img class="image--left" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here" onclick="parseText()">
 					<img class="image--right" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here">
 					<img class="image--left" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fproduction.slashmedias.com%2Fmain_images%2Fimages%2F000%2F005%2F357%2FIMAGE-PENSEE-HD-1_original_original_large.jpg%3F1372235419&f=1" alt="This is here">
+				</div>
+				<div>
+					<div class="jsonText"></div>
+					<div class="jsonText"></div>
+					<div class="jsonText"></div>
 				</div>
 			</div>
 		</div>
