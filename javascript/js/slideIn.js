@@ -1,11 +1,9 @@
 'use strict';
 
 function move() {
-	var timeline = document.getElementsByClassName("image--left")[0].offsetHeight;
-	// console.log(timeline);
-	// console.log(scrollY);
+	var timeline = document.getElementsByClassName("timeline")[0].offsetTop;
 
-	if (scrollY > timeline) {
+	if (scrollY+400 > timeline) {
 		document.getElementsByClassName("image--left")[0].style.right = "430px";
 		document.getElementsByClassName("image--left")[0].style.opacity = "1";
 	} else {
