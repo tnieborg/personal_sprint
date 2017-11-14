@@ -92,3 +92,11 @@
 	width: 400px;
 	height: 300px;
 }
+
+.hobby {
+	text-align: center;
+	cursor: pointer;
+}
+.hobby:hover {
+	background-color: green;
+}
